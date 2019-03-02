@@ -1,0 +1,37 @@
+Name: Anmol Mishra
+Roll number: 150010041
+========================================
+
+
+================
+     TASK 2
+================
+
+
+1. Run your code on datasets/garden.csv, with different values of k. Looking at the performance plots, does the SSE of k-means algorithm ever increase as the iterations are made? (1 mark)
+Answer: The SSE of k-means algorithm never increases because it's a strictly decreasing function by the algorithm itself.
+
+3. Look at the files 3lines.png and mouse.png. Manually draw cluster boundaries around the 3 clusters visible in each file (no need to submit the hand drawn clusters). Test the k-means algorithm on the datasets datasets/3lines.csv and datasets/mouse.csv. How does the algorithm’s clustering compare with the clustering you would do by hand? Why do you think this happens? (1 mark)
+Answer: The algorithm's clustering is different from the hand clustering. This is because distance from the cluster centre is the key differentiation in case of algorithm, but we can observe the visual features as well and thus visualise the actual clusters. 
+In case of 3 lines, each rod is so long that the distance of extreme points for one rod actually become closer to the higher cluster centre in the second rod.
+Similarly, in mouse.csv, the points outside of ear clusters are actually closer to the ear cluster centres than the face cluster centre. Hence the observed boundary from algorithm crosses the actual boundary we can visualise.
+
+
+
+================
+     TASK 3
+================
+
+1. For each dataset, with kmeansplusplus initialization algorithm, report “average SSE” and "average iterations". (1 mark)
+Answer:
+
+Dataset     |  Initialization | Average SSE  | Average Iterations
+==================================================================
+   100.csv  |        forgy    |8472.63311469|     	 2.43
+   100.csv  |        kmeans++ |8472.63311469|     	 2.0
+  1000.csv  |        forgy    |21337462.2968|     	 3.28
+  1000.csv  |        kmeans++ |19887301.0042|     	 3.16
+ 10000.csv  |        forgy    |168842238.612|     	 21.1
+ 10000.csv  |        kmeans++ |22323178.8625|     	 7.5
+
+ It can easily be observed that kmeans++ is a much better seeding method, both SSE and iterations are lower than the corresponding values for forgy initialisation.

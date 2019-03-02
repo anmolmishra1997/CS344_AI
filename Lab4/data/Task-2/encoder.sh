@@ -1,0 +1,1 @@
+python Enco.py $1

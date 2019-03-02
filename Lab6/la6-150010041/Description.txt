@@ -1,0 +1,13 @@
+Task 1-
+We use the standard particle filter techniques here. Initially the particles are initialized uniformly, and then we carry on the the update for an observation.
+For each unique particle position, we weigh it by the emissionModel prediction for its position and then resample it.
+By resampling from the distribution, we avoid the need to store weights at all
+
+Task 2 -
+Same as above but operated for time elapse condition. We get the ghost distribution for each particle position and then sample from the resulting distribution and make that particle move to the new sampled position
+
+Task 3 -
+The Joint Particle filter techniques are extremely similar to above apart from few special differences. One being that the particles now become tuples of positions, so we need to update for all ghosts in one time step itself.
+
+Task 4 -
+Implementing Time Elapse for Task 3 is exactly identical to Task 2 due to the way implementation has been done. 

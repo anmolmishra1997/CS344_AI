@@ -1,0 +1,1 @@
+python MDP.py $1

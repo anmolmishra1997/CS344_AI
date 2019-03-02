@@ -1,0 +1,17 @@
+berlin52.tsp
+Cost for Hill Climb: 7661.013272126166
+Cost for nearestNeighbourTour: 7841.387787835103
+Cost for Euclidean MST: 7713.034759376222
+
+st70.tsp
+Cost for Hill Climb: 719.9199262363668
+Cost for nearestNeighbourTour: 691.0818376431567
+Cost for Euclidean MST: 708.7995327612067
+
+pr76.tsp
+Cost for Hill Climb: 116172.61048984747
+Cost for nearestNeighbourTour: 114285.31985734106
+Cost for Euclidean MST: 112265.42119500675
+
+From all the cases I had time to analyze, apart from berlin52, nearest neighbour and euclidean outperform random hill climbing.
+In general, better initialization state in case of Euclidean should give us better results. However as is true with local search, it's hard to theoretically prove that such a gain would be obtained in all cases. Hence we observe that in Berlin52, Euclidean performance is slightly worse than Random.

@@ -1,0 +1,13 @@
+Question 1-
+Pacman is boxed in test cases 1 and 2. We must note that in task 1, whenever pacman is boxed, it treats all the legal positions at the same distance from itself equally. This is because it only receives distance information from the sensor, and not any information for direction. In test case 1, there is only 1 legal position at the distance where ghost is present, thus pacman is able to detect it successfully. In test case 2, there are 4 legal positions at the distance of the ghost, and thus pacman believes that the ghost could be in those 4 legal states with equal probability.
+
+
+
+
+Question 2 -
+Major Color Shift -
+The difference in shading emerges in test case 2 and test case 3. Since we are not observing the ghost, we can only predict its new position distribution using action distribution of agent. The ghost can be of two types only - RandomGhost or GoSouthGhost. For Random Ghost, the probability of entering any state over time shall remain same(slight change due to boundary which is dealt below) because we start with a uniform prior and the action distribution is a uniformly distributed random.
+For GoSouthGhost, the probability of ghost going towards south is higher. In this case, successive updations of the belief distribution shall allot greater probability to the ghost being located in a southern state. Thus in test cases 2 and 3, we observe that the southern states become lighter with time.
+
+Minor Color Shift -
+If test case 4 is observed carefully, the states on the boundaries become slightly darker with time, and states inside lighter. This is because on each updation, the contribution to boundary states is from fewer legal positions and the contribution to inner states is from all 4 directions. This leads to the slight color gradient as we move towards the boundary.

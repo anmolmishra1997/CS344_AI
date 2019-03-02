@@ -1,0 +1,54 @@
+###############################################
+# TASK 2.1 - YOUR CODE HERE
+numHiddenLayers = 0
+hiddenLayerSizes = []
+alpha = 0.1
+batchSize = 100
+epochs = 10
+
+###############################################
+
+
+###############################################
+# TASK 2.2 - YOUR CODE HERE
+numHiddenLayers = 1
+hiddenLayerSizes = [3]
+alpha = 0.1
+batchSize = 100
+epochs = 50
+
+It performs well with 3 hidden nodes most times but for some random seeds,
+such as random seed 6, we need 5 hidden nodes to get a 90 percent plus accuracy.
+
+###############################################
+
+
+###############################################
+# TASK 2.3 - YOUR CODE HERE
+numHiddenLayers = 1
+hiddenLayerSizes = [3]
+alpha = 0.01
+batchSize = 100
+epochs = 50
+
+###############################################
+
+###############################################
+# TASK 2.4 - YOUR CODE HERE
+numHiddenLayers = 1
+hiddenLayerSizes = [2]
+alpha = 0.1
+batchSize = 100
+epochs = 10
+
+###############################################
+
+###############################################
+# TASK 3 - YOUR CODE HERE
+numHiddenLayers = 2
+hiddenLayerSizes = [10,10]
+alpha = 0.1
+batchSize = 100
+epochs = 100
+###############################################
+
